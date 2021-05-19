@@ -287,7 +287,7 @@ class KafkaProducerSpec extends KakfaSpec with should.Matchers with StrictLoggin
 
     val builder: StreamsBuilder = new StreamsBuilder()
 
-    builder.stream[Int, Int](firstTopic.name(), Consumed.`with`(Serdes.intSerde, Serdes.intSerde))
+    builder.stream[Int, Int](firstTopic.name())
       .map((k, v) => new KeyValue(s"key-$k", s"value-$v"))
       .to(secondTopic.name())
 
