@@ -8,6 +8,7 @@
 
     <logger name="org.testcontainers" level="OFF"/>
     <logger name="org.apache.kafka" level="OFF"/>
+    <logger name="com.github" level="OFF"/>
     <logger name="akka" level="OFF"/>
     <logger name="akka.event" level="OFF"/>
 
